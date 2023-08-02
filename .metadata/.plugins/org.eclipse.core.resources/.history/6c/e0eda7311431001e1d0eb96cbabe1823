@@ -1,0 +1,34 @@
+package com.practice;
+
+import java.util.Scanner;
+
+public class Example {
+	
+	public static void main(String[] args) {
+		System.out.println("Started...");
+		System.out.println("Enter two numbers ");
+		try {
+			
+			Scanner sc = new Scanner(System.in);
+			
+			int n1 = Integer.parseInt(sc.next());
+			int n2 = Integer.parseInt(sc.next());
+			
+			int result = n1/n2;
+			
+			System.out.println(result);
+			
+			
+		}
+		catch(NumberFormatException e) {
+			System.out.println("Provide Invalid Input");
+			System.out.println(e.getMessage());
+		}
+		catch(ArithmeticException e) {
+			System.out.println("Cannot divide by zero");
+			System.out.println(e.getMessage());
+		}
+	
+		System.out.println("Terminated...");
+	}
+}

@@ -1,0 +1,22 @@
+package com.practice;
+
+import java.util.Scanner;
+
+public class Example {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Started...");
+		System.out.println("Enter two numbers ");
+		Scanner sc = new Scanner(System.in);
+		
+		int n1 = Integer.parseInt(sc.next());
+		int n2 = Integer.parseInt(sc.next());
+		
+		int result = n1/n2;
+		
+		System.out.println(result);
+		
+		System.out.println("Terminated...");
+	}
+}
